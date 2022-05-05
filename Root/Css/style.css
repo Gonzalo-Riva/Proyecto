@@ -16,10 +16,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+h1,h2,h3,h4{
+    color: white;
+    
+}
+.h5carrusel{
+    text-shadow: 2px 2px 4px black;
+}
 /*
 A partir de acá me enfoco en estilizar la barra de navegación (/*!Ayuda)
 
 */
+/*
 .navbar-container {
     display: flex;
     justify-content: end;
@@ -30,16 +38,23 @@ A partir de acá me enfoco en estilizar la barra de navegación (/*!Ayuda)
     box-shadow: 0px 2px 20px black;
 
 }
+*/
 /* El primer elemento de la barra irá centrado a la izquierda (El "Logo")*/
+/*
 .navbar-container > :nth-child(2) {
     margin-left: auto;
 }
+*/
 /* Ajusto el tamaño del logo.. */
-.navbar-container a img {
+
+.logo-diego{
     width: 130px;
 }
+
+
 /* COMIENZA EL ESTILIZADO DE LOS BOTONES */
-button {
+
+.button-animation {
     width: 140px;
     height: 65px;
     font-size: calc(0.5em + 0.5vw);
@@ -56,7 +71,7 @@ button {
     z-index: 1;
 }
 
-button::before {
+.button-animation::before {
     content: "";
     position: absolute;
     top: 0;
@@ -67,22 +82,27 @@ button::before {
     z-index: -1;
     transition: all 0.5s;
 }
-button:hover::before {
+.button-animation:hover::before {
     width: 100%;
 }
 
-button:hover {
-    color: rgb(255, 255, 255);
+.button-animation:hover {
+    color: rgb(255, 255, 255) !important;
 }
 
-button:active:before {
+.button-animation:active:before {
     background: #b9b9b9;
 }
+
 
 /* FINALIZA EL ESTILIZADO DE LOS BOTONES */   
 
 article {
     height: 100vh;
+}
+.yujiro{
+    background-image: none;
+    background-color: white;
 }
 
 .relleno {
@@ -262,22 +282,21 @@ footer {
     height: 100px;
 }
 
-
-
-
 /* INICIO RESPONSIVE */
 @media (max-width: 768px) {
+    /*
     .navbar-container {
         flex-direction: column;
         margin: 0px;
         gap: 0px;
     }
-
-    button {
+*/
+    .button-animation {
         width: 100%;
         text-align: center;
         font-size: calc(1em + 0.3vw);
     }
+    
     .main-text {
         font-size: calc(1em + 0.5vw);
         padding: 10px;
