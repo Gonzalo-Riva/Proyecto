@@ -1,0 +1,50 @@
+
+/* AJUSTO LOGO */
+.logo-diego{
+    width: 130px;
+}
+/*FIN LOGO */
+
+/* ESTILIZADO DE LOS BOTONES */
+.bg-light{
+
+    background-color: nth($background-color , 1 ) !important; 
+}
+.button-animation{
+    width: 140px;
+    height: 65px;
+    font-size: calc(0.5em + 0.5vw);
+    line-height: 1em;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color:nth($background-color, 1 );
+    color: nth($font-color , 2) !important;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background-color: nth($background-color, 2 );
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    &:hover::before{
+        width: 100%;
+    }
+    &:hover{
+        color: nth($font-color , 1 ) !important;
+    }
+    &:active:before{
+        background: #b9b9b9;
+    }
+
+}
+/* FIN ESTILIZADO DE BOTONES */

@@ -1,0 +1,60 @@
+/* nesting o anidamiento */
+@import '../scss/base/variables';
+
+@import '../scss/components/header';
+
+@mixin setupFlex() {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+@mixin size($width,$height) {
+    width: $width;
+    height: $height;
+    
+}
+@import '../scss/components/articulo';
+
+/* INICIO RESPONSIVE */
+@media (max-width: 768px) {
+    .button-animation{
+        width: 100%;
+        text-align: center;
+        font-size: calc(1em + 0.3vw);
+    }
+    .main-text{
+        font-size: calc(1em + 0.5vw);
+        padding: 10px;
+        line-height: 1em;
+        h1{
+            line-height: 1em;
+        }
+    }
+    .footer-container p{
+        font-size: calc(0.5em + 0.5vw);
+        line-height: 1em;
+    }
+    .biografia iframe{
+        @include size(80vw,55vw );
+    }
+    .contacto-formulario {
+        width: 80vw;
+    }
+    .social{
+        flex-direction: column;
+        button{
+            @include size(100px,100px );
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
+            text-decoration: none;
+        }
+    }
+    .iconify{
+        padding:5px;
+        @include size(50px,50px );
+    }
+
+}
+/* FIN RESPONSIVE */
+
+@import '../scss/components/footer';
