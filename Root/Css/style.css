@@ -1,5 +1,9 @@
 /* nesting o anidamiento */
 /* Lista */
+.color-principal, .biografia p, h1, h2, h3, h4, .button-animation:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
 /* AJUSTO LOGO */
 .logo-diego {
   width: 130px;
@@ -20,7 +24,7 @@
   border: none;
   outline: none;
   background-color: white;
-  color: black !important;
+  color: rgb(0, 0, 0) !important;
   font-weight: 700;
   position: relative;
   transition: all 0.5s;
@@ -39,9 +43,6 @@
 }
 .button-animation:hover::before {
   width: 100%;
-}
-.button-animation:hover {
-  color: white !important;
 }
 .button-animation:active:before {
   background: #b9b9b9;
@@ -64,10 +65,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-h1, h2, h3, h4 {
-  color: white;
 }
 
 .h5carrrusel {
@@ -155,7 +152,6 @@ article {
   padding: 20px;
 }
 .biografia p {
-  color: white;
   padding-left: 10vw;
   padding-right: 10vw;
   font-size: calc(0.5em + 0.5vw);
@@ -209,7 +205,7 @@ article {
   resize: none;
 }
 .contacto-formulario h4 {
-  color: black;
+  color: rgb(0, 0, 0);
   text-shadow: none;
 }
 

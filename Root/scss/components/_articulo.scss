@@ -14,7 +14,7 @@ body{
     background-size: cover;
 }
 h1,h2,h3,h4{
-    color:nth($font-color ,1 );
+    @extend .color-principal;
 }
 .h5carrrusel{
     text-shadow: 2px 2px 4px black;
@@ -104,7 +104,7 @@ article {
     overflow: hidden;
     padding: 20px;
     p {
-        color: nth($font-color ,1 );
+        @extend .color-principal;
         padding-left: 10vw;
         padding-right: 10vw;
         font-size: calc(0.5em + 0.5vw);
@@ -153,7 +153,7 @@ article {
         resize: none;
     }
     h4{
-        color: nth($font-color ,2 );
+        color: map-get($map: $font-color, $key:'secundario' );
         text-shadow: none;
     }
 

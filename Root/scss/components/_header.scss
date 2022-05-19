@@ -20,7 +20,7 @@
     border: none;
     outline: none;
     background-color:nth($background-color, 1 );
-    color: nth($font-color , 2) !important;
+    color: map-get($map: $font-color, $key: 'secundario') !important;
     font-weight: 700;
     position: relative;
     transition: all 0.5s;
@@ -40,7 +40,7 @@
         width: 100%;
     }
     &:hover{
-        color: nth($font-color , 1 ) !important;
+        @extend .color-principal;
     }
     &:active:before{
         background: #b9b9b9;

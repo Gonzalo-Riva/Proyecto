@@ -1,6 +1,8 @@
 /* nesting o anidamiento */
 @import '../scss/base/variables';
-
+.color-principal{  
+    color: map-get($map: $font-color, $key:'principal')!important;
+}
 @import '../scss/components/header';
 
 @mixin setupFlex() {

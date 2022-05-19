@@ -1,9 +1,10 @@
 $font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $background-color-principal: white;
 /* Lista */
-$font-color:
-white,
-black;
+$font-color: (
+'principal':rgb(255, 255, 255) ,
+'secundario':rgb(0, 0, 0) );
+
 $background-color:
 white ,
 black;
